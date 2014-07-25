@@ -56,8 +56,10 @@
          function onDeviceReady() {
        var networkState = checkConnection();
           if (networkState == Connection.NONE) {
+              alert("local/index.html is trying to include??");
               window.location="local/index.html";
           } else {
+            alert("should get our meteor app url");
                window.location="http://s3.amazonaws.com/walkingheads/walkingheads.html";
           }
      }
